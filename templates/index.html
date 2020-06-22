@@ -2,19 +2,21 @@
 <h1 style="color: #5e9ca0;"><img src="https://inshur.com/wp-content/uploads/2017/10/IS-logo-200px.png" alt="INSHUR: TLC Insurance App" /></h1>
 <h3>Welcome to the INSHUR Test App</h3>
 <p><strong>Task</strong></p>
-<p>Using the below features files write 4 api level based tests prefrebly using Python.&nbsp;</p>
+<p>For each of the scenarios listed below write a api level based test preferably using Python.&nbsp;&nbsp;</p>
+<h2 style="color: #2e6c80;">Feature1: Products</h2>
+<p><strong>Scenario:</strong>Retrieve all products in the INSHUR app<br /><strong>&nbsp; Given:</strong>&nbsp;The products "Taxi" and "courier" are available<br /><strong>&nbsp; When:</strong>&nbsp;The request is made to retrieve all products<br /><strong>&nbsp; Then:</strong>&nbsp;the products "Taxi" and "courier" will be retrieved</p>
+<p><br /><strong>Scenario:</strong>Retrieve individual product<br /><strong>&nbsp; Given:</strong>&nbsp;The product "Taxi" which has a productId of "1234"<br /><strong>&nbsp; When:</strong>&nbsp;The request is made to retrieve this product<br /><strong>&nbsp; Then:</strong>&nbsp;The product version "1.0" of "Taxi" is available</p>
+<p><br /><strong>Scenario:</strong>Retrieve non existent product<br /><strong>&nbsp; Given:</strong>&nbsp;A product with producId "2222" does not existent<br /><strong>&nbsp; When:</strong>&nbsp;The request is made to retrieve this product<br /><strong>&nbsp; Then:</strong>&nbsp;And error is thrown "product 2222 not found"</p>
+<p>&nbsp;</p>
+<h2 style="color: #2e6c80;">Feature2: Customers</h2>
+<p><strong>Scenairo:</strong>&nbsp;Retreive all existing customers<br /><strong>Given:</strong>&nbsp;the following customers are available&nbsp; &nbsp; &nbsp; &nbsp;<br />| customer1 |&nbsp;customer2 | customer3 | customer4| customer5 | customer6 |<br /><strong>When:</strong>&nbsp;The request is made to retrieve all customers<br /><strong>Then:</strong>&nbsp;all customer details are retrieved successfully</p>
 <p>&nbsp;</p>
 <p><strong>Available endpoints</strong></p>
 <p>index:http://localhost:5000/</p>
 <p>view all products:&nbsp;<a href="http://localhost:5000/products">http://localhost:5000/products</a></p>
 <p>view individual product:&nbsp;<a href="http://localhost:5000/product/(">http://localhost:5000/product/{product_id}</a></p>
 <p>view all customers: <a href="http://localhost:5000/customers">http://localhost:5000/customers</a></p>
-<p>Basic authroisation is only needed for /customers, the details you require are:</p>
-<p>Username: adminUser Password: adminpassword</p>
-<h2 style="color: #2e6c80;">Feature1: Products</h2>
-<p><strong>Scenairo:</strong>&nbsp;Retreive all products in the inshur app<br /><strong>&nbsp; Given:</strong>&nbsp;The products "Taxi" and "courier" are available<br /><strong>&nbsp; When:</strong>&nbsp;The request is made to retrieve all products<br /><strong>&nbsp; Then:</strong>&nbsp;the products "Taxi" and "courier" will be retrived</p>
-<p><br /><strong>Scenairo:</strong>&nbsp;Retreive individual product<br /><strong>&nbsp; Given:</strong>&nbsp;The product "Taxi" which has a productId of "1234"<br /><strong>&nbsp; When:</strong>&nbsp;The request is made to retrieve this product<br /><strong>&nbsp; Then:</strong>&nbsp;The product version "1.0" of "Taxi" is available</p>
-<p><br /><strong>Scenairo:</strong>&nbsp;Retreive non existent product<br /><strong>&nbsp; Given:</strong>&nbsp;A product with producId "2222" does not existent<br /><strong>&nbsp; When:</strong>&nbsp;The request is made to retrieve this product<br /><strong>&nbsp; Then:</strong>&nbsp;And error is thrown "product 2222 not found"</p>
 <p>&nbsp;</p>
-<h2 style="color: #2e6c80;">Feature2: Customers</h2>
-<p><strong>Scenairo:</strong>&nbsp;Retreive all existing customers<br /><strong>Given:</strong>&nbsp;the following customers are available&nbsp; &nbsp; &nbsp; &nbsp;<br />| customer1 |&nbsp;customer2 | customer3 | customer4| customer5 | customer6 |<br /><strong>When:</strong>&nbsp;The request is made to retrieve all customers<br /><strong>Then:</strong>&nbsp;all customer details are retirves sucessfully</p>
+<p>Basic authroisation is only needed for /customers, the details you require are:</p>
+<p>Username: adminuser</p>
+<p>Password: adminpassword</p>
